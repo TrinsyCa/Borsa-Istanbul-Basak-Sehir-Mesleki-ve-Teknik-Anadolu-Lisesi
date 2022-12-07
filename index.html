@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font-awesome / 4.7.0-->
+
+        <link rel="shortcut icon" href="images/BIST-Logo-Icon2.ico">
+
+        <title>BİST | Borsa İstanbul Başakşehir Mesleki ve Teknik Anadolu Lisesi</title>
+    </head>
+
+    <nav id="nav-corner">
+        <a href="index.html"><img src="images/BIST_Logo.png" alt="BIST Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu() " aria-hidden="true"></i>
+            <ul>
+                <li class="nav-link-online"><a href="index.html">ANASAYFA</a></li>
+                <li><a href="index.html">HAKKINDA</a></li>
+                <li><a href="index.html">BÖLÜMLER</a></li>
+                <li><a href="index.html">BLOG</a></li>
+                <li><a href="index.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="MenuBtn" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+    <header>
+        <div class="text-box">
+            <h1>Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi</h1>
+            <p>Vizyonumuz; Mesleki ve Teknik Eğitimde dünya standartlarını yakalamış, bilim ve teknoloji ışığında yüksek nitelikli bir eğitim anlayışıyla kabul görmüş, tercih edilen ve tüm paydaşlarının parçası olmaktan gurur duyduğu bir eğitim kurumu olmaktır...</p>
+            <a href="https://bistbasaksehirmtal.meb.k12.tr" class="hero-btn" target="_blank">
+                Meb Sayfası
+            </a>
+        </div>
+
+        <!------  JavaScript for Toggle Menu  ------>
+        
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        var MenuBtn = document.getElementById("MenuBtn");
+        var NavCorner = document.getElementById("nav-corner");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+            MenuBtn.style.opacity = "0";
+            NavCorner.style.borderBottomRightRadius = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-130px";
+            MenuBtn.style.opacity = "1";
+            NavCorner.style.borderBottomRightRadius = "30px";
+        }
+        </script>
+    </header>
+
+    <body>
+        <!--Course-->
+        <section class="course">
+            <h1>Okulumuzda Bulunan Bölümler</h1>
+            <p class="miniS">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Bilişim Teknolojileri</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Kimya</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Fizik</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        
+        <!--Pictures-->
+        <section class="pictures">
+            <h1>Bizden Kareler</h1>
+            <p class="miniS">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+            <div class="row">
+                <div class="pictures-col">
+                    <img src="images/Pictures/Gamelab_Kurucu_Ziyareti_Foto1.png" alt="Gamelab İstanbul">
+                    <div class="layer">
+                        <h3>Gamelab İstanbul</h3>
+                    </div>
+                </div>
+                <div class="pictures-col">
+                    <img src="images/Pictures/Riders_Robot_Ligi_Foto2.png" alt="Riders Robot Ligi">
+                    <div class="layer">
+                        <h3>Riders Robot Ligi 1.Sezon Drone Ligi Şampiyonluğu</h3>
+                    </div>
+                </div>
+                <div class="pictures-col">
+                    <img src="images/Pictures/Bist_Pars_Robotics_Foto2.png" alt="Riders Robotics">
+                    <div class="layer">
+                        <h3>Pars Robotics</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Activity-->
+        <section class="activity">
+            <h1>Okul Aktiviteleri</h1>
+            <p class="miniS">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="activity-col">
+                <div class="activity-detail">
+                    <img src="images/Pictures/Borsa_Istanbul_Futbol_Saha.png">
+                    <h2>Futbol</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+                <div class="activity-detail">
+                    <img src="images/Pictures/BIST_Basketbol.jpg">
+                    <h2>Basketbol</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+                <div class="activity-detail">
+                    <img src="images/Pictures/Bilisim_Teknolojileri_Laboratuvari.jpg">
+                    <h2>Laboratuvarlar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Comments-->
+        <section class="comments">
+            <h1>Yorumlar</h1>
+            <p class="miniS">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="comments-row">
+                <div class="comments-col">
+                    <div class="comments-detail">
+                        <img src="images/Pictures/Users/Selma_Ozgenc.png" alt="Selma Özgenç" title="Selma Özgenç">
+                        <div>
+                            <h2>Selma Özgenç</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-col">
+                    <div class="comments-detail-r">
+                        <div>
+                            <h2>Yılmaz Ilışık</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                        </div>
+                        <img src="images/Pictures/Users/Yilmaz_Ilisik.jpeg" title="Yılmaz Ilışık">
+                    </div>
+                </div>
+                <div class="comments-col">
+                    <div class="comments-detail">
+                        <img src="images/Pictures/Users/Gizem_Yaman.jpg" title="Gizem Yaman">
+                        <div>
+                            <h2>Gizem Yaman</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-col">
+                    <div class="comments-detail-r">
+                        <div>
+                            <h2>Ömer İslamoğlu</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                        </div>
+                        <img src="images/Pictures/Users/Omer_Islamoglu.jpg" title="Ömer İslamoğlu">
+                    </div>
+                </div>
+                <div class="comments-col">
+                    <div class="comments-detail">
+                        <img src="images/Pictures/Users/Erdal_Anil_Alkan.png" title="Erdal Anıl Alkan">
+                        <div>
+                            <h2>Erdal Anıl Alkan</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <!--Vision-->
+        <section class="vision">
+            <div class="vision-col">
+                <img src="images/Pictures/bist-vizyon.jpg" alt="Borsa İstanbul Başakşehir Mesleki ve Teknik Anadolu Lisesi">
+                <div class="vision-detail">
+                    <div class="yazi">
+                        <h1>Vizyonumuz</h1>
+                        <p>Borsa İstanbul Başakşehir Mesleki ve Teknik Anadolu Lisesi olarak vizyonumuz; Mesleki ve Teknik Eğitimde dünya standartlarını yakalamış, bilim ve teknoloji ışığında yüksek nitelikli bir eğitim anlayışıyla kabul görmüş, tercih edilen ve tüm paydaşlarının parçası olmaktan gurur duyduğu bir eğitim kurumu olmaktır...</p>
+                    </div>
+                    <div class="yazi">
+                        <h1>Misyonumuz</h1>
+                        <p>Borsa İstanbul Başakşehir Mesleki ve Teknik Anadolu Lisesi olarak misyonumuz; Sanayi ile işbirliği içinde, ülke ekonomisinin ve iş yaşamının ihtiyacı olan nitelikli işgücünü, çağdaş ve bilimsel temellere dayanan eğitim anlayışıyla birleştirerek, meslekî ve insanî değerlere sahip, özgüveni yüksek, kendini sürekli geliştiren bireyler olarak yetiştirmektir...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!--Contact-->
+        <section class="contact">
+            <div class="contact-col">
+                <div class="contact-detail">
+                    
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
